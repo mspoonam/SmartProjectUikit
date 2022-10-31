@@ -11,13 +11,19 @@
 		CAB38FDF290E8EB600C36BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FDE290E8EB600C36BC0 /* AppDelegate.swift */; };
 		CAB38FE1290E8EB600C36BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FE0290E8EB600C36BC0 /* SceneDelegate.swift */; };
 		CAB38FE3290E8EB600C36BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FE2290E8EB600C36BC0 /* ViewController.swift */; };
-		CAB38FE6290E8EB600C36BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB38FE4290E8EB600C36BC0 /* Main.storyboard */; };
 		CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB38FE7290E8EB600C36BC0 /* Assets.xcassets */; };
 		CAB38FEB290E8EB600C36BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */; };
 		CAB38FF6290E8EB700C36BC0 /* SmartProjectUikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FF5290E8EB700C36BC0 /* SmartProjectUikitTests.swift */; };
 		CAB39000290E8EB700C36BC0 /* SmartProjectUikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FFF290E8EB700C36BC0 /* SmartProjectUikitUITests.swift */; };
 		CAB39002290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */; };
 		CAB39015290E95B100C36BC0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39014290E95B100C36BC0 /* LoginViewModel.swift */; };
+		F876A6F0290FEBD200D7E1A8 /* LoginFormSwiftUi in Resources */ = {isa = PBXBuildFile; fileRef = F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */; };
+		F876A6F2290FEDF400D7E1A8 /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6F1290FEDF400D7E1A8 /* TasksController.swift */; };
+		F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876A6F3290FEFDD00D7E1A8 /* main.storyboard */; };
+		F876A6FB2910058700D7E1A8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FA2910058700D7E1A8 /* Task.swift */; };
+		F876A6FF2910066B00D7E1A8 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FE2910066B00D7E1A8 /* TaskStore.swift */; };
+		F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */ = {isa = PBXBuildFile; fileRef = F876A70029104CBE00D7E1A8 /* TasklyAssets */; };
+		F876A7042910521500D7E1A8 /* TaskUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A7032910521500D7E1A8 /* TaskUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +49,6 @@
 		CAB38FDE290E8EB600C36BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAB38FE0290E8EB600C36BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAB38FE2290E8EB600C36BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAB38FE5290E8EB600C36BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAB38FE7290E8EB600C36BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB38FEA290E8EB600C36BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB38FEC290E8EB600C36BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		CAB38FFF290E8EB700C36BC0 /* SmartProjectUikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitUITests.swift; sourceTree = "<group>"; };
 		CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAB39014290E95B100C36BC0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LoginFormSwiftUi; path = ../LoginFormSwiftUi; sourceTree = "<group>"; };
+		F876A6F1290FEDF400D7E1A8 /* TasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
+		F876A6F3290FEFDD00D7E1A8 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		F876A6FA2910058700D7E1A8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F876A6FE2910066B00D7E1A8 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
+		F876A70029104CBE00D7E1A8 /* TasklyAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TasklyAssets; sourceTree = "<group>"; };
+		F876A7032910521500D7E1A8 /* TaskUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		CAB38FD2290E8EB600C36BC0 = {
 			isa = PBXGroup;
 			children = (
+				F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */,
 				CAB38FDD290E8EB600C36BC0 /* SmartProjectUikit */,
 				CAB38FF4290E8EB700C36BC0 /* SmartProjectUikitTests */,
 				CAB38FFE290E8EB700C36BC0 /* SmartProjectUikitUITests */,
@@ -103,11 +116,10 @@
 		CAB38FDD290E8EB600C36BC0 /* SmartProjectUikit */ = {
 			isa = PBXGroup;
 			children = (
-				CAB39013290E94DE00C36BC0 /* Storyboards */,
-				CAB39012290E94C400C36BC0 /* Support */,
+				CAB39013290E94DE00C36BC0 /* Taskly */,
+				CAB39012290E94C400C36BC0 /* Taskly support */,
 				CAB39011290E938B00C36BC0 /* View Models  */,
 				CAB39010290E938400C36BC0 /* Views  */,
-				CAB3900F290E937600C36BC0 /* Models */,
 			);
 			path = SmartProjectUikit;
 			sourceTree = "<group>";
@@ -132,6 +144,7 @@
 		CAB3900F290E937600C36BC0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F876A6F1290FEDF400D7E1A8 /* TasksController.swift */,
 				CA60DEFB290E985900A46E6A /* LoginRequestModel.swift */,
 			);
 			path = Models;
@@ -153,24 +166,37 @@
 			path = "View Models ";
 			sourceTree = "<group>";
 		};
-		CAB39012290E94C400C36BC0 /* Support */ = {
+		CAB39012290E94C400C36BC0 /* Taskly support */ = {
 			isa = PBXGroup;
 			children = (
+				F876A70029104CBE00D7E1A8 /* TasklyAssets */,
 				CAB38FDE290E8EB600C36BC0 /* AppDelegate.swift */,
 				CAB38FE0290E8EB600C36BC0 /* SceneDelegate.swift */,
 				CAB38FE7290E8EB600C36BC0 /* Assets.xcassets */,
 				CAB38FEC290E8EB600C36BC0 /* Info.plist */,
+				CAB3900F290E937600C36BC0 /* Models */,
 			);
-			path = Support;
+			path = "Taskly support";
 			sourceTree = "<group>";
 		};
-		CAB39013290E94DE00C36BC0 /* Storyboards */ = {
+		CAB39013290E94DE00C36BC0 /* Taskly */ = {
 			isa = PBXGroup;
 			children = (
-				CAB38FE4290E8EB600C36BC0 /* Main.storyboard */,
+				F876A6F3290FEFDD00D7E1A8 /* main.storyboard */,
 				CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */,
+				F876A6FA2910058700D7E1A8 /* Task.swift */,
+				F876A702291051DA00D7E1A8 /* Helper */,
+				F876A6FE2910066B00D7E1A8 /* TaskStore.swift */,
 			);
-			path = Storyboards;
+			path = Taskly;
+			sourceTree = "<group>";
+		};
+		F876A702291051DA00D7E1A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F876A7032910521500D7E1A8 /* TaskUtility.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,9 +303,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */,
+				F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */,
+				F876A6F0290FEBD200D7E1A8 /* LoginFormSwiftUi in Resources */,
 				CAB38FEB290E8EB600C36BC0 /* LaunchScreen.storyboard in Resources */,
 				CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */,
-				CAB38FE6290E8EB600C36BC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +332,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F876A7042910521500D7E1A8 /* TaskUtility.swift in Sources */,
 				CAB39015290E95B100C36BC0 /* LoginViewModel.swift in Sources */,
 				CA60DEFC290E985900A46E6A /* LoginRequestModel.swift in Sources */,
+				F876A6FF2910066B00D7E1A8 /* TaskStore.swift in Sources */,
 				CAB38FE3290E8EB600C36BC0 /* ViewController.swift in Sources */,
 				CAB38FDF290E8EB600C36BC0 /* AppDelegate.swift in Sources */,
+				F876A6F2290FEDF400D7E1A8 /* TasksController.swift in Sources */,
+				F876A6FB2910058700D7E1A8 /* Task.swift in Sources */,
 				CAB38FE1290E8EB600C36BC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,14 +377,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAB38FE4290E8EB600C36BC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAB38FE5290E8EB600C36BC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
