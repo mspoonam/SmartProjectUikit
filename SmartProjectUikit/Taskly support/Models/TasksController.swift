@@ -6,6 +6,7 @@
 ///Users/chandniwork/Work/30october/SmartProjectUikit/Taskly
 
 import UIKit
+import Foundation
 
 class TasksController: UITableViewController {
     
@@ -20,6 +21,7 @@ class TasksController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        self.navigationController?.navigationItem.title = ""
         
         tableView.tableFooterView = UIView()
         
@@ -121,9 +123,9 @@ extension TasksController {
             completionHandler(true)
             
         }
-         // TODO: Poonam come back
-//        deleteAction.image =
-//        deleteAction.backgroundColor =
+         
+        deleteAction.image = UIImage(named: "delete")
+        deleteAction.backgroundColor = UIColor.red
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
         
@@ -148,9 +150,9 @@ extension TasksController {
             completionHandler(true)
             
         }
-        // TODO: Poonam come back
-//        doneAction.image = doneAction
-//        doneAction.backgroundColor =
+       
+        doneAction.image = UIImage(named: "done")
+        doneAction.backgroundColor = UIColor.green
         
         
         return indexPath.section == 0 ? UISwipeActionsConfiguration(actions: [doneAction]) : nil

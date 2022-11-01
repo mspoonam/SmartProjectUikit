@@ -50,12 +50,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HH3-yM-RHP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="RdP-TD-inw">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RdP-TD-inw">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.65098039215686276" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.14117647058823529" green="0.65098039215686276" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>

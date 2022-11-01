@@ -12,12 +12,11 @@ import UIKit
 
 extension UINavigationController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
-        
         return.lightContent
     }
 }
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window : UIWindow?
@@ -26,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let taskStore = TaskStore()
         
-        //let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
-        //  let doneTasks = [Task(name: "Watch Netflix")]
+        let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
+          let doneTasks = [Task(name: "Watch Netflix")]
         
-        //  taskStore.tasks = [todoTasks, doneTasks]
+          taskStore.tasks = [todoTasks, doneTasks]
         
         let tasksController = window?.rootViewController?.children.first as? TasksController
         

@@ -17,7 +17,7 @@
 		CAB39002290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */; };
 		CAB39015290E95B100C36BC0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39014290E95B100C36BC0 /* LoginViewModel.swift */; };
 		F876A6F2290FEDF400D7E1A8 /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6F1290FEDF400D7E1A8 /* TasksController.swift */; };
-		F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876A6F3290FEFDD00D7E1A8 /* main.storyboard */; };
+		F876A6F4290FEFDD00D7E1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876A6F3290FEFDD00D7E1A8 /* Main.storyboard */; };
 		F876A6FB2910058700D7E1A8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FA2910058700D7E1A8 /* Task.swift */; };
 		F876A6FF2910066B00D7E1A8 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FE2910066B00D7E1A8 /* TaskStore.swift */; };
 		F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */ = {isa = PBXBuildFile; fileRef = F876A70029104CBE00D7E1A8 /* TasklyAssets */; };
@@ -56,7 +56,7 @@
 		CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAB39014290E95B100C36BC0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F876A6F1290FEDF400D7E1A8 /* TasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
-		F876A6F3290FEFDD00D7E1A8 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		F876A6F3290FEFDD00D7E1A8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F876A6FA2910058700D7E1A8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F876A6FE2910066B00D7E1A8 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		F876A70029104CBE00D7E1A8 /* TasklyAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TasklyAssets; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		CAB39013290E94DE00C36BC0 /* Taskly */ = {
 			isa = PBXGroup;
 			children = (
-				F876A6F3290FEFDD00D7E1A8 /* main.storyboard */,
+				F876A6F3290FEFDD00D7E1A8 /* Main.storyboard */,
 				F876A6FA2910058700D7E1A8 /* Task.swift */,
 				F876A702291051DA00D7E1A8 /* Helper */,
 				F876A6FE2910066B00D7E1A8 /* TaskStore.swift */,
@@ -297,7 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */,
+				F876A6F4290FEFDD00D7E1A8 /* Main.storyboard in Resources */,
 				F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */,
 				CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */,
 			);
@@ -491,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmartProjectUikit/Support/Info.plist;
+				INFOPLIST_FILE = "SmartProjectUikit/Taskly support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -518,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SmartProjectUikit/Support/Info.plist;
+				INFOPLIST_FILE = "SmartProjectUikit/Taskly support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
