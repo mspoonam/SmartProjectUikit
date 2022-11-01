@@ -3,26 +3,33 @@
 //  SmartProjectUikit
 //
 //  Created by chandni chaudhari on 31/10/22.
-//
+///Users/chandniwork/Work/30october/SmartProjectUikit/Taskly
 
 import UIKit
 
 class TasksController: UITableViewController {
     
-    var taskStore = TaskStore?() {
-        self.didSet {
+    var taskStore = TaskStore!
+    
+    didSet {
         taskStore.tasks = TasksUtility.fetch() ?? [[Task](), [Task]()]
             
         tableView.reloadData()
         }
     }
     
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        tableView.tableFooterView = UIView()
-        
-    }
+override func viewDidLoad() {
+    
+    super.viewDidLoad()
+    
+    tableView.tableFooterView = UIView()
+    
+    let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
+    let doneTasks = [Task(name: "Watch Netflix")]
+    
+    taskStore.tasks = [todoTasks, doneTasks]
+           }
+}
     
     @IBAction func addTask(_ sender: UIBarButtonItem) {
         
@@ -49,6 +56,7 @@ class TasksController: UITableViewController {
         
         alertController.addTextField {
             textFiled in
+
             textFiled.placeholder = "Enter task name..."
             textFiled.addTarget(self, action: #selector(self.handleTextChanged),for: .editingChanged)
         }

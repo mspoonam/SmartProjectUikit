@@ -12,7 +12,6 @@
 		CAB38FE1290E8EB600C36BC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FE0290E8EB600C36BC0 /* SceneDelegate.swift */; };
 		CAB38FE3290E8EB600C36BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FE2290E8EB600C36BC0 /* ViewController.swift */; };
 		CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB38FE7290E8EB600C36BC0 /* Assets.xcassets */; };
-		CAB38FEB290E8EB600C36BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */; };
 		CAB38FF6290E8EB700C36BC0 /* SmartProjectUikitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FF5290E8EB700C36BC0 /* SmartProjectUikitTests.swift */; };
 		CAB39000290E8EB700C36BC0 /* SmartProjectUikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FFF290E8EB700C36BC0 /* SmartProjectUikitUITests.swift */; };
 		CAB39002290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */; };
@@ -50,7 +49,6 @@
 		CAB38FE0290E8EB600C36BC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAB38FE2290E8EB600C36BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAB38FE7290E8EB600C36BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CAB38FEA290E8EB600C36BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB38FEC290E8EB600C36BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB38FF1290E8EB700C36BC0 /* SmartProjectUikitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartProjectUikitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB38FF5290E8EB700C36BC0 /* SmartProjectUikitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitTests.swift; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				F876A6F3290FEFDD00D7E1A8 /* main.storyboard */,
-				CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */,
 				F876A6FA2910058700D7E1A8 /* Task.swift */,
 				F876A702291051DA00D7E1A8 /* Helper */,
 				F876A6FE2910066B00D7E1A8 /* TaskStore.swift */,
@@ -306,7 +303,6 @@
 				F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */,
 				F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */,
 				F876A6F0290FEBD200D7E1A8 /* LoginFormSwiftUi in Resources */,
-				CAB38FEB290E8EB600C36BC0 /* LaunchScreen.storyboard in Resources */,
 				CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,17 +371,6 @@
 			targetProxy = CAB38FFC290E8EB700C36BC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CAB38FE9290E8EB600C36BC0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAB38FEA290E8EB600C36BC0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CAB39003290E8EB700C36BC0 /* Debug */ = {

@@ -18,18 +18,26 @@ extension UINavigationController {
 }
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window : UIWindow?
     
-    let taskStore = TaskStore()
+    //var window : UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-       // let tasksController = window?.rootviewController?.childViewControllers.first as? TasksController
+        let taskStore = TaskStore()
         
-       // tasksController?.taskStore = taskStore
+        //let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
+      //  let doneTasks = [Task(name: "Watch Netflix")]
+        
+      //  taskStore.tasks = [todoTasks, doneTasks]
+        
+       let tasksController = window?.rootViewController?.childViewControllers.first as? TasksController
+        
+      tasksController?.taskStore = taskStore
         
         return true
-        
+    }
+    
+    
     func applicationWillResignedActive( application: UIApplication){
     }
         

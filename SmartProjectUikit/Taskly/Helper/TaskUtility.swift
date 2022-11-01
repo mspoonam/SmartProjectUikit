@@ -10,13 +10,13 @@ import Foundation
 class taskUtility {
     private static let key = "task"
     
-    private static func archive( task: [[task]]) -> NSData {
+    private static func archive( task: [[Task]]) -> NSData {
         return NSKeyedArchiver.archivedData(withRootObject: tasks) as NSData
         
     }
     
     static func fetch() -> [[Task]])? {
-        guard let unarchivedData = UserDefaults.standard.object(forKey: key)as? Data else {
+        guard let unarchivedData = UserDefaults.standard.object(forKey: key) as? Data else {
             return NSkeyedUnArchiver.unarchiveObject(with: unarchivedData) as? [[Task]]
         }
         
@@ -28,5 +28,4 @@ class taskUtility {
             
         }
     }
-
 }
