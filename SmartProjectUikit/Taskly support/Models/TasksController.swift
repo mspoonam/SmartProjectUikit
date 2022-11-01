@@ -9,27 +9,25 @@ import UIKit
 
 class TasksController: UITableViewController {
     
-    var taskStore = TaskStore!
-    
-    didSet {
-        taskStore.tasks = TasksUtility.fetch() ?? [[Task](), [Task]()]
-            
-        tableView.reloadData()
+    var taskStore = TaskStore() {
+        
+        didSet {
+            taskStore.tasks = TasksUtility.fetch() ?? [[Task](), [Task]()]
+            tableView.reloadData()
         }
     }
     
-override func viewDidLoad() {
-    
-    super.viewDidLoad()
-    
-    tableView.tableFooterView = UIView()
-    
-    let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
-    let doneTasks = [Task(name: "Watch Netflix")]
-    
-    taskStore.tasks = [todoTasks, doneTasks]
-           }
-}
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        tableView.tableFooterView = UIView()
+        
+        let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
+        let doneTasks = [Task(name: "Watch Netflix")]
+        
+        taskStore.tasks = [todoTasks, doneTasks]
+    }
     
     @IBAction func addTask(_ sender: UIBarButtonItem) {
         
@@ -41,14 +39,14 @@ override func viewDidLoad() {
             
             let newTask = Task(name: name)
             
-            self.taskStore.add(newTask, at: 0)
+            self.taskStore.add(task: newTask, at: 0)
             
             let indexPath = IndexPath(row: 0, section: 0)
             self.tableView.insertRows(at: [indexPath], with: .automatic)
             
-        TasksUtility.save(self.taskStore.tasks)
+            TasksUtility.save(task: self.taskStore.tasks)
         }
-            
+        
         addAction.isEnabled = false
         
         
@@ -56,7 +54,7 @@ override func viewDidLoad() {
         
         alertController.addTextField {
             textFiled in
-
+            
             textFiled.placeholder = "Enter task name..."
             textFiled.addTarget(self, action: #selector(self.handleTextChanged),for: .editingChanged)
         }
@@ -74,40 +72,35 @@ override func viewDidLoad() {
         else { return }
         
         addAction.isEnabled = text.trimmingCharacters(in: .whitespaces).isEmpty
-
+        
     }
     
-
 }
-
-   
 // MARK: - DataSource
 
 extension TasksController {
-  
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 0 ? "To-do" : " Done"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-   //     return taskStore.tasks.count
-    
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return taskStore.tasks[section].count
-    }
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        //    cell.textLable?.text = taskStore.tasks[indexPath.section][indexPath.row].name
-            return cell
-        }
+             return taskStore.tasks.count
         
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return taskStore.tasks[section].count
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
+        //    cell.textLable?.text = taskStore.tasks[indexPath.section][indexPath.row].name
+        return cell
+    }
+    
+}
+
 extension TasksController {
-    
-    
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 54
@@ -123,16 +116,14 @@ extension TasksController {
             
             self.tableView.deleteRows(at: [indexPath], with: .automatic)
             
-          TasksUtility.save(self.taskStore.tasks)
-            
+            TasksUtility.save(task: self.taskStore.tasks)
             
             completionHandler(true)
             
-            
         }
-        
-        deleteAction.image =
-        deleteAction.backgroundColor =
+         // TODO: Poonam come back
+//        deleteAction.image =
+//        deleteAction.backgroundColor =
         
         return UISwipeActionsConfiguration(actions: [deleteAction])
         
@@ -148,20 +139,18 @@ extension TasksController {
             
             tableView.deleteRows(at: [indexPath], with: .automatic)
             
-            self.taskStore.add(doneTask, at: 0, isDone: true)
+            self.taskStore.add(task: doneTask, at: 0, isDone: true)
             
-            tableView.insertRows(at: IndexPath(row: 0, section: 1), with: .automatic)
+            tableView.insertRows(at: [IndexPath(row: 0, section: 1)], with: .automatic)
             
-            TasksUtility.save(self.taskStore.tasks)
+            TasksUtility.save(task: self.taskStore.tasks)
             
             completionHandler(true)
             
-            
-            
         }
-        
-        doneAction.image = doneAction
-        doneAction.backgroundColor =
+        // TODO: Poonam come back
+//        doneAction.image = doneAction
+//        doneAction.backgroundColor =
         
         
         return indexPath.section == 0 ? UISwipeActionsConfiguration(actions: [doneAction]) : nil

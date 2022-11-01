@@ -16,13 +16,12 @@
 		CAB39000290E8EB700C36BC0 /* SmartProjectUikitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB38FFF290E8EB700C36BC0 /* SmartProjectUikitUITests.swift */; };
 		CAB39002290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */; };
 		CAB39015290E95B100C36BC0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB39014290E95B100C36BC0 /* LoginViewModel.swift */; };
-		F876A6F0290FEBD200D7E1A8 /* LoginFormSwiftUi in Resources */ = {isa = PBXBuildFile; fileRef = F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */; };
 		F876A6F2290FEDF400D7E1A8 /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6F1290FEDF400D7E1A8 /* TasksController.swift */; };
 		F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876A6F3290FEFDD00D7E1A8 /* main.storyboard */; };
 		F876A6FB2910058700D7E1A8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FA2910058700D7E1A8 /* Task.swift */; };
 		F876A6FF2910066B00D7E1A8 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A6FE2910066B00D7E1A8 /* TaskStore.swift */; };
 		F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */ = {isa = PBXBuildFile; fileRef = F876A70029104CBE00D7E1A8 /* TasklyAssets */; };
-		F876A7042910521500D7E1A8 /* TaskUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A7032910521500D7E1A8 /* TaskUtility.swift */; };
+		F876A7042910521500D7E1A8 /* TasksUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876A7032910521500D7E1A8 /* TasksUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +55,12 @@
 		CAB38FFF290E8EB700C36BC0 /* SmartProjectUikitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitUITests.swift; sourceTree = "<group>"; };
 		CAB39001290E8EB700C36BC0 /* SmartProjectUikitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartProjectUikitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAB39014290E95B100C36BC0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LoginFormSwiftUi; path = ../LoginFormSwiftUi; sourceTree = "<group>"; };
 		F876A6F1290FEDF400D7E1A8 /* TasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
 		F876A6F3290FEFDD00D7E1A8 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		F876A6FA2910058700D7E1A8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		F876A6FE2910066B00D7E1A8 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		F876A70029104CBE00D7E1A8 /* TasklyAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TasklyAssets; sourceTree = "<group>"; };
-		F876A7032910521500D7E1A8 /* TaskUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUtility.swift; sourceTree = "<group>"; };
+		F876A7032910521500D7E1A8 /* TasksUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 		CAB38FD2290E8EB600C36BC0 = {
 			isa = PBXGroup;
 			children = (
-				F876A6EF290FEBD200D7E1A8 /* LoginFormSwiftUi */,
 				CAB38FDD290E8EB600C36BC0 /* SmartProjectUikit */,
 				CAB38FF4290E8EB700C36BC0 /* SmartProjectUikitTests */,
 				CAB38FFE290E8EB700C36BC0 /* SmartProjectUikitUITests */,
@@ -191,7 +188,7 @@
 		F876A702291051DA00D7E1A8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F876A7032910521500D7E1A8 /* TaskUtility.swift */,
+				F876A7032910521500D7E1A8 /* TasksUtility.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 			files = (
 				F876A6F4290FEFDD00D7E1A8 /* main.storyboard in Resources */,
 				F876A70129104CBE00D7E1A8 /* TasklyAssets in Resources */,
-				F876A6F0290FEBD200D7E1A8 /* LoginFormSwiftUi in Resources */,
 				CAB38FE8290E8EB600C36BC0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F876A7042910521500D7E1A8 /* TaskUtility.swift in Sources */,
+				F876A7042910521500D7E1A8 /* TasksUtility.swift in Sources */,
 				CAB39015290E95B100C36BC0 /* LoginViewModel.swift in Sources */,
 				CA60DEFC290E985900A46E6A /* LoginRequestModel.swift in Sources */,
 				F876A6FF2910066B00D7E1A8 /* TaskStore.swift in Sources */,
