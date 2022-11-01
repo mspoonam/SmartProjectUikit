@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let taskStore = TaskStore()
         
-        let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K")]
+        let todoTasks = [Task(name: "Meditate"), Task(name: "Buy Bananas"), Task(name: "Run a 5K"), Task(name: "hey") ]
           let doneTasks = [Task(name: "Watch Netflix")]
         
           taskStore.tasks = [todoTasks, doneTasks]

@@ -73,7 +73,7 @@ class TasksController: UITableViewController {
               let text = sender.text
         else { return }
         
-        addAction.isEnabled = text.trimmingCharacters(in: .whitespaces).isEmpty
+        addAction.isEnabled = !text.trimmingCharacters(in: .whitespaces).isEmpty
         
     }
     
@@ -87,7 +87,7 @@ extension TasksController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-             return taskStore.tasks.count
+        return taskStore.tasks.count
         
     }
     
@@ -112,7 +112,7 @@ extension TasksController {
         
         let deleteAction = UIContextualAction(style: .destructive, title: nil) { (action, sourceView, completionHandler) in
             
-            let isDone = self.taskStore.tasks[indexPath.section][indexPath.row].isDone
+            guard let isDone = self.taskStore.tasks[indexPath.section][indexPath.row].isDone else  { return }
             
             self.taskStore.removeTask(at: indexPath.row, isDone: isDone)
             
@@ -123,7 +123,7 @@ extension TasksController {
             completionHandler(true)
             
         }
-         
+        
         deleteAction.image = UIImage(named: "delete")
         deleteAction.backgroundColor = UIColor.red
         
@@ -150,7 +150,7 @@ extension TasksController {
             completionHandler(true)
             
         }
-       
+        
         doneAction.image = UIImage(named: "done")
         doneAction.backgroundColor = UIColor.green
         
